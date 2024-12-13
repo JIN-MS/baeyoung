@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수학 문제 풀기 게임</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>수학 문제 풀기 게임</h1>
+  <div id="game-container">
+    <div id="question-container">
+      <p id="question">문제: 12 + 8 = ?</p>
+      <input type="number" id="answer" placeholder="답을 입력하세요">
+      <button onclick="checkAnswer()">확인</button>
+    </div>
+    <div id="score-container">
+      <p id="score">점수: 0</p>
+      <p id="time-left">남은 시간: 20초</p> <!-- 타이머 표시 -->
+    </div>
+  </div>
+  <div id="game-over-container" style="display: none;">
+    <h2>게임 오버</h2>
+    <p id="final-score">최종 점수: 0</p>
+    <div id="question-history"></div> <!-- 틀린 문제와 정답을 보여줄 곳 -->
+    <button onclick="restartGame()">다시 시작</button> <!-- 다시 시작 버튼 -->
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
